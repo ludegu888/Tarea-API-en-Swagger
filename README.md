@@ -1,55 +1,46 @@
-# API con Next.js
+# Mi Aplicación Next.js - API con Swagger
 
-Este proyecto es una API sencilla construida con **Next.js** que proporciona tres endpoints:
+Este proyecto es una API desarrollada con **Next.js 15 (App Router)** que gestiona usuarios y productos, incluyendo documentación interactiva mediante Swagger UI.
 
-- `GET /api/users` → Devuelve una lista de usuarios en formato JSON.
-- `GET /api/products` → Devuelve una lista de productos en formato JSON.
-- `POST /api/product` → Permite agregar un producto enviando un JSON con `name` y `price`.
+## 🚀 Funcionalidades
 
-## 📦 Instalación
+- **Documentación Interactiva:** Integración con Swagger para probar los endpoints en tiempo real.
+- **Gestión de Usuarios:** Endpoint para listar usuarios.
+- **Gestión de Productos:** 
+  - Listar productos existentes.
+  - Crear nuevos productos mediante peticiones POST.
+
+## 🛠️ Instalación y Uso
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/rpiealb297/mi-app-next.git
-   cd nextjs-api
-   ```
+   git clone [https://github.com/ludegu888/]
+Instalar dependencias:
 
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
+Bash
+npm install
+Ejecutar en modo desarrollo:
 
-## 🚀 Ejecución en local
-
-Para iniciar el servidor en desarrollo:
-
-```bash
+Bash
 npm run dev
-```
+Acceder a la aplicación:
+La aplicación estará disponible en http://localhost:3000.
 
-Esto iniciará un servidor en `http://localhost:3000`.
+📄 Documentación de la API (Swagger)
+La documentación detallada de los endpoints se encuentra en la propia aplicación. Una vez que el servidor esté corriendo, visita:
 
-### 🔗 Endpoints disponibles
+👉 http://localhost:3000/docs
 
-- **Usuarios:** `http://localhost:3000/api/users`
-- **Productos:** `http://localhost:3000/api/products`
-- **Subir producto:** `http://localhost:3000/api/product` (requiere JSON con `name` y `price`: {"name":"producto1", "price":5.5})
+Desde allí podrás probar:
 
-## 🌍 Despliegue
+GET /api/users: Lista de usuarios.
 
-Puedes desplegar la API en **Vercel** con un solo comando:
+GET /api/products: Lista de productos.
 
-```bash
-npm run build
-vercel deploy
-```
+POST /api/product: Crear un producto enviando un JSON con name y price.
 
-O subirlo a cualquier servidor compatible con **Next.js**.
+📂 Estructura de carpetas relevante
+src/app/api/: Contiene la lógica de los endpoints (Users, Products y el generador de JSON de Swagger).
 
-## 📄 Licencia
+src/app/docs/: Contiene la página que renderiza la interfaz de Swagger UI.
 
-Este proyecto está bajo la Licencia MIT. Puedes usarlo y modificarlo libremente.
-
----
-
-**¡Listo para usar! 🚀**
