@@ -1,3 +1,13 @@
+/**
+ * @swagger
+ * /api/users:
+ *   get:
+ *     summary: Listar usuarios
+ *     description: Retorna un listado de todos los usuarios en formato JSON.
+ *     responses:
+ *       200:
+ *         description: Éxito al obtener la lista.
+ */
 export async function GET() {
     const users = [
       { id: 1, name: "Juan Pérez", email: "juan@example.com" },

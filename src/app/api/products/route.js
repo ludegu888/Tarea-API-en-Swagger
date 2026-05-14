@@ -1,3 +1,13 @@
+/**
+ * @swagger
+ * /api/products:
+ *   get:
+ *     summary: Listar productos
+ *     description: Retorna todos los productos disponibles.
+ *     responses:
+ *       200:
+ *         description: Éxito al obtener los productos.
+ */
 export async function GET() {
     const products = [
       { id: 1, name: "Laptop", price: 1000 },

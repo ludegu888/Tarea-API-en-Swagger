@@ -1,3 +1,28 @@
+/**
+ * @swagger
+ * /api/product:
+ *   post:
+ *     summary: Crear un producto
+ *     description: Crea un nuevo producto enviando nombre y precio.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: "producto1"
+ *               price:
+ *                 type: number
+ *                 example: 5.5
+ *     responses:
+ *       201:
+ *         description: Producto creado correctamente.
+ *       400:
+ *         description: Error en los datos enviados.
+ */
 export async function POST(req) {
     try {
       const body = await req.json();
