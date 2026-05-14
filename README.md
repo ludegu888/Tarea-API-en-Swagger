@@ -14,7 +14,7 @@ Este proyecto es una API desarrollada con **Next.js 15 (App Router)** que gestio
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/ludegu888/]
+   git clone (https://github.com/ludegu888/Tarea-API-en-Swagger.git)
 Instalar dependencias:
 
 Bash
